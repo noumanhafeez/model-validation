@@ -27,6 +27,15 @@ To do this, we divide the data into **three sets**:
 > The key idea: **Never touch the test set until everything else is finalized.**
 
 ---
+## When Do We Need a Validation Set?
+A **validation set** is needed when:  
+- We want to **tune hyperparameters** of the model (e.g., number of layers, learning rate, number of trees).  
+- We want to **compare multiple models** and select the best one.  
+- We want to **prevent overfitting** by monitoring performance on data not seen during training.  
+
+> If the dataset is very small, sometimes **cross-validation** can replace a separate validation set.
+
+
 
 ## Common Dataset Ratios
 - **Training:** 60%  
